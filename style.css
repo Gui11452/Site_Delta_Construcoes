@@ -242,10 +242,23 @@ body{
     background: var(--gradiente);
 }
 
+.container-home>div>div{
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-home h1{
     color: var(--cor-branco);
     font-size: 8rem;
     text-shadow: 0.2rem 0.2rem 2rem var(--cor-branco);
+}
+
+.container-home>div>div img{
+    width: 10rem;
 }
 
 .container-home h2{
@@ -292,7 +305,6 @@ body{
 
 .container-sobre-nos .titulo{
     max-width: 40rem;
-    border: 1px solid red;
 }
 
 .container-sobre-nos>div>div{
@@ -625,8 +637,22 @@ body{
 
 /* Container Footer - Fim */
 
+@media (max-width: 940px){
+    .container-home h1{
+        font-size: 6rem;
+    }
+
+    .container-home>div>div img{
+        width: 6rem;
+    }
+}
+
 
 @media (max-width: 840px){
+
+    html{
+        font-size: 54%;
+    }
 
     .cabecalho{
         display: none;
@@ -643,13 +669,6 @@ body{
     .cabecalho-mobile{
         display: block;
     }
-
-    .container-home h1{
-        font-size: 5rem;
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
     
     .container-home h2{
         text-align: center;
@@ -659,10 +678,23 @@ body{
 
 }
 
-@media (max-width: 545px){
+@media (max-width: 640px){
 
     html{
         font-size: 50%;
+    }
+
+    .container-home h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .container-home>div>div img{
+        width: 4rem;
+    }
+
+    .container-home>div>div{
+        flex-flow: row wrap;
     }
 
     .rodape iframe{
