@@ -317,6 +317,11 @@ body{
     gap: 3rem;
 }
 
+.container-sobre-nos h2{
+    width: 100%;
+    text-align: center;
+}
+
 .container-sobre-nos h1{
     font-size: 5rem;
     color: var(--cor-branco);
@@ -604,6 +609,7 @@ body{
 
 .rodape-coluna h2{
     font-size: 3rem;
+    color: var(--cor-preto);
 }
 
 .rodape-coluna a{
