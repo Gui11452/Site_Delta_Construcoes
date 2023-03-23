@@ -82,8 +82,9 @@ body{
     --cor-branco: #fff;
     --cor-preto: black;
     --cor-preto-claro: #1e2326;
-    --cor-red: #838383;
+    --cor-red: #c5c0bf;
     --fonte: 'Noto Sans Lepcha', sans-serif;
+    --gradiente: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(131,131,131,0.7) 100%);
 }
 
 /* Cabecalho - Início */
@@ -238,7 +239,7 @@ body{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(131,131,131,0.7) 100%);
+    background: var(--gradiente);
 }
 
 .container-home h1{
@@ -255,6 +256,7 @@ body{
 .container-home a{
     background: var(--cor-red);
     color: var(--cor-branco);
+    font-weight: bold;
     padding: 1rem;
     font-size: 2.5rem;
     border-radius: 1rem;
@@ -276,18 +278,24 @@ body{
 
 .container-sobre-nos{
     width: 100%;
-    padding: 2rem 0;
-    background: var(--cor-red);
+    background: url('images/equipamento5.jpg');
+    background-size: cover;
     border-top: 0.3rem solid var(--cor-branco);
     border-bottom: 0.3rem solid var(--cor-branco);
 }
 
-.container-sobre-nos .titulo{
-    border: 1px solid red;
-    max-width: 40rem;
+.container-sobre-nos>div{
+    width: 100%;
+    padding: 2rem 0;
+    background: var(--gradiente);
 }
 
-.container-sobre-nos>div{
+.container-sobre-nos .titulo{
+    max-width: 40rem;
+    border: 1px solid red;
+}
+
+.container-sobre-nos>div>div{
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -303,7 +311,7 @@ body{
     text-shadow: 0.2rem 0.2rem 2rem rgba(255, 255, 255, 0.8);
 }
 
-.container-sobre-nos>div>div:nth-of-type(1){
+.container-sobre-nos>div>div>div:nth-of-type(1){
     display: flex;
     flex-flow: row nowrap;
     gap: 4rem;
@@ -311,7 +319,7 @@ body{
     align-items: center;
 }
 
-.container-sobre-nos>div>div:nth-of-type(2){
+.container-sobre-nos>div>div>div:nth-of-type(2){
     padding: 1rem;
     max-width: 60rem;
     border-radius: 1rem;
@@ -434,13 +442,18 @@ body{
 
 .container-representacoes{
     width: 100%;
-    background: var(--cor-red);
-    padding: 3rem 0;
+    background: url('images/equipamento4.jpg');
+    background-size: cover;
     border-top: 0.2rem solid var(--cor-branco);
     border-bottom: 0.2rem solid var(--cor-branco);
 }
 
 .container-representacoes>div{
+    padding: 3rem 0;
+    background: var(--gradiente);
+}
+
+.container-representacoes>div>div{
     width: 90%;
     margin: 0 auto;
 }
