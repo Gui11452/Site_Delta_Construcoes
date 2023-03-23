@@ -82,7 +82,7 @@ body{
     --cor-branco: #fff;
     --cor-preto: black;
     --cor-preto-claro: #1e2326;
-    --cor-red: rgb(250, 25, 25);
+    --cor-red: #838383;
     --fonte: 'Noto Sans Lepcha', sans-serif;
 }
 
@@ -238,7 +238,7 @@ body{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,0,0.5047268907563025) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(131,131,131,0.7) 100%);
 }
 
 .container-home h1{
@@ -249,7 +249,7 @@ body{
 
 .container-home h2{
     color: var(--cor-branco);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .container-home a{
@@ -260,7 +260,7 @@ body{
     border-radius: 1rem;
     text-align: center;
     transition: .3s;
-    box-shadow: 0.2rem 0.2rem 2rem rgba(255, 0, 0, 0.8);
+    box-shadow: 0.2rem 0.2rem 2rem rgba(108, 108, 108, 0.8);
 }
 
 .container-home a:hover{
@@ -282,41 +282,36 @@ body{
     border-bottom: 0.3rem solid var(--cor-branco);
 }
 
+.container-sobre-nos .titulo{
+    border: 1px solid red;
+    max-width: 40rem;
+}
+
 .container-sobre-nos>div{
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
 }
 
-.sobre-nos-imagem{
-    background: var(--cor-preto-claro);
-    padding: 1rem;
-    border: 0.7rem solid var(--cor-branco);
-    max-width: 30rem;
-    border-radius: 1rem;
-    transition: .3s;
+.container-sobre-nos h1{
+    font-size: 5rem;
+    color: var(--cor-branco);
+    text-shadow: 0.2rem 0.2rem 2rem rgba(255, 255, 255, 0.8);
 }
 
-.sobre-nos-imagem:hover, .sobre-nos-imagem ~ div:hover{
-    transform: scale(1.05);
-}
-
-.sobre-nos-imagem img{
-    width: 100%;
-    border-radius: 1rem;
-}
-
-.container-sobre-nos h1 ~ div{
+.container-sobre-nos>div>div:nth-of-type(1){
     display: flex;
-    flex-flow: row wrap;
-    gap: 10rem;
+    flex-flow: row nowrap;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
 }
 
-.sobre-nos-imagem ~ div{
+.container-sobre-nos>div>div:nth-of-type(2){
     padding: 1rem;
     max-width: 60rem;
     border-radius: 1rem;
@@ -327,35 +322,38 @@ body{
     justify-content: center;
     align-items: flex-start;
     background: var(--cor-branco);
+    transition: .2s;
 }
 
-.sobre-nos-imagem ~ div>span{
-    width: 50%;
-    display: inline-block;
+.container-sobre-nos>div>div:nth-of-type(2)>span{
+    width: 60%;
     background: var(--cor-red);
     height: 0.5rem;
     border-radius: 1rem;
 }
 
-.sobre-nos-imagem ~ div p{
+.container-sobre-nos>div>div:nth-of-type(2) p{
     text-align: justify;
     text-indent: 2rem;
 }
 
-.sobre-nos-imagem ~ div p span{
-    color: var(--cor-red);
-    font-weight: bold;
-}
-
-.sobre-nos-imagem ~ div p::first-letter{
+.container-sobre-nos>div>div:nth-of-type(2) p::first-letter{
     font-size: 3rem;
     color: var(--cor-red);
 }
 
-.sobre-nos-imagem ~ div h2{
-    color: var(--cor-red);
-    font-size: 2.5rem;
+.container-sobre-nos>div>div:nth-of-type(2) p span{
+    font-weight: bold;
 }
+
+.container-sobre-nos>div>div:nth-of-type(2):hover{
+    transform: scale(1.05);
+}
+
+.container-sobre-nos img{
+    width: 20rem;
+}
+
 
 /* Container Sobre Nos - Fim */
 
@@ -363,16 +361,11 @@ body{
 
 .container-servicos{
     width: 100%;
-    background: url('images/banner.png');
+    padding: 3rem 0;
+    background: var(--cor-red);
 }
 
 .container-servicos>div{
-    width: 100%;
-    padding: 3rem 0;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.container-servicos>div>div{
     width: 90%;
     margin: 0 auto;
 }
@@ -397,14 +390,14 @@ body{
     align-items: center;
     color: var(--cor-branco);
     border-radius: 1rem;
-    background: var(--cor-red);
+    background: var(--cor-preto-claro);
     transition: .3s;
 }
 
 .servico:hover{
     transform: translateY(2rem);
     background: var(--cor-branco);
-    color: var(--cor-red);
+    color: var(--cor-preto-claro);
 }
 
 .servico:hover span{
@@ -474,16 +467,11 @@ body{
 
 .container-contatos{
     width: 100%;
-    background: url('images/banner.png');
+    padding: 3rem 0;
+    background: var(--cor-red);
 }
 
 .container-contatos>div{
-    width: 100%;
-    padding: 3rem 0;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.container-contatos>div>div{
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -543,7 +531,7 @@ body{
     border-radius: 1rem;
     text-align: center;
     transition: .3s;
-    box-shadow: 0.2rem 0.2rem 2rem rgba(255, 0, 0, 0.8);
+    box-shadow: 0.2rem 0.2rem 2rem rgba(108, 108, 108, 0.8);
 }
 
 .contato a:nth-of-type(2):hover{
@@ -652,7 +640,6 @@ body{
     
     .container-home h2{
         text-align: center;
-        font-size: 1.5rem;
         width: 90%;
         margin: 0 auto;
     }
