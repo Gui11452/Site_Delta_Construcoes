@@ -291,6 +291,7 @@ body{
 
 .container-sobre-nos{
     width: 100%;
+    min-height: 100vh;
     background: url('images/equipamento5.jpg');
     background-size: cover;
     border-top: 0.3rem solid var(--cor-branco);
@@ -299,6 +300,7 @@ body{
 
 .container-sobre-nos>div{
     width: 100%;
+    min-height: 100vh;
     padding: 2rem 0;
     background: var(--gradiente);
 }
@@ -309,6 +311,7 @@ body{
 
 .container-sobre-nos>div>div{
     width: 90%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -350,28 +353,28 @@ body{
     transition: .2s;
 }
 
-.container-sobre-nos>div>div:nth-of-type(2)>span{
+.container-sobre-nos>div>div>div:nth-of-type(2)>span{
     width: 60%;
-    background: var(--cor-red);
+    background: var(--cor-preto);
     height: 0.5rem;
     border-radius: 1rem;
 }
 
-.container-sobre-nos>div>div:nth-of-type(2) p{
+.container-sobre-nos>div>div>div:nth-of-type(2) p{
     text-align: justify;
     text-indent: 2rem;
 }
 
-.container-sobre-nos>div>div:nth-of-type(2) p::first-letter{
+.container-sobre-nos>div>div>div:nth-of-type(2) p::first-letter{
     font-size: 3rem;
-    color: var(--cor-red);
+    color: var(--cor-preto);
 }
 
-.container-sobre-nos>div>div:nth-of-type(2) p span{
+.container-sobre-nos>div>div>div:nth-of-type(2) p span{
     font-weight: bold;
 }
 
-.container-sobre-nos>div>div:nth-of-type(2):hover{
+.container-sobre-nos>div>div>div:nth-of-type(2):hover{
     transform: scale(1.05);
 }
 
