@@ -90,7 +90,7 @@ body{
 /* Cabecalho - Início */
 
 .botao-mobile, .botao-oculto{
-    border: 0.2rem solid var(--cor-red);
+    border: 0.2rem solid var(--cor-preto);
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
@@ -111,7 +111,7 @@ body{
     width: 5rem;
     height: 0.3rem;
     border-radius: 1rem;
-    background: var(--cor-red);
+    background: var(--cor-preto);
 }
 
 .botao-oculto{
@@ -154,7 +154,7 @@ body{
 }
 
 .cabecalho-oculto a{
-    color: var(--cor-red);
+    color: var(--cor-preto);
     transition: .2s;
 }
 
@@ -190,7 +190,7 @@ body{
     gap: 2rem;
 }
 
-.cabecalho a{
+.cabecalho a, .cabecalho-oculto a{
     transition: .2s;
     font-size: 2rem;
     color: var(--cor-preto);
@@ -207,7 +207,7 @@ body{
     transform: scale(1.05);
 }
 
-.cabecalho a span{
+.cabecalho a span, .cabecalho-oculto a span{
     width: 0%;
     transition: .5s;
     display: inline-block;
@@ -216,7 +216,7 @@ body{
     background: var(--cor-preto);
 }
 
-.cabecalho a:hover span{
+.cabecalho a:hover span, .cabecalho-oculto a:hover span{
     width: 100%;
 }
 
@@ -313,7 +313,7 @@ body{
 
 .container-sobre-nos>div>div>div:nth-of-type(1){
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     gap: 4rem;
     justify-content: center;
     align-items: center;
