@@ -291,7 +291,7 @@ body{
 
 .container-sobre-nos{
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     background: url('images/equipamento5.jpg');
     background-size: cover;
     border-top: 0.3rem solid var(--cor-branco);
@@ -300,7 +300,7 @@ body{
 
 .container-sobre-nos>div{
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 2rem 0;
     background: var(--gradiente);
 }
@@ -311,7 +311,7 @@ body{
 
 .container-sobre-nos>div>div{
     width: 90%;
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
@@ -389,16 +389,23 @@ body{
 
 .container-servicos{
     width: 100%;
+    min-height: 90vh;
     padding: 3rem 0;
     background: var(--cor-red);
 }
 
 .container-servicos>div{
     width: 90%;
+    min-height: 90vh;
     margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .servicos{
+    margin: 2rem 0 0 0;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -462,6 +469,7 @@ body{
 
 .container-representacoes{
     width: 100%;
+    min-height: 90vh;
     background: url('images/equipamento4.jpg');
     background-size: cover;
     border-top: 0.2rem solid var(--cor-branco);
@@ -470,11 +478,17 @@ body{
 
 .container-representacoes>div{
     padding: 3rem 0;
+    min-height: 90vh;
     background: var(--gradiente);
 }
 
 .container-representacoes>div>div{
     width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
     margin: 0 auto;
 }
 
@@ -500,12 +514,16 @@ body{
 
 .container-contatos{
     width: 100%;
+    min-height: 90vh;
     padding: 3rem 0;
     background: var(--cor-red);
 }
 
 .container-contatos>div{
+    justify-content: center;
+    align-items: center;
     width: 90%;
+    min-height: 90vh;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
